@@ -1,0 +1,7 @@
+git clone https://github.com/ManuKothari/StockForecaster.git -----> clone the repo into local machine
+git status -----> check how your version of the repo differs from the one on github
+git add README.md -----> add new files or changes to existing files
+git commit -m "Updated" -----> commit that you are sure of your changes and -m lets you pass on a message which is enclosed in the quotes, this makes changes locally
+git push -----> push into the repo on github
+
+All commands are to be executed from the location where you cloned the repo originally
