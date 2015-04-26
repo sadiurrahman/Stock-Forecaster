@@ -1,4 +1,4 @@
-setwd("/home/saienthan/College/SE/R/tests");
+setwd("/home/rahman/College/SE/R/tests");
 library(forecast)
 plotForecastErrors <- function(forecasterrors)
 {
@@ -62,16 +62,16 @@ for(i in test_points){
   cat(lower[days],v2[i+days],upper[days],"\n")  
   if((v2[i+days]<upper[days])&&(v2[i+days]>lower[days])){
     passed <- passed+1
-    cat("PASSED\n")
+    cat("PASSED \n")
   }  
   else
   {
-    cat("FAILED\n")
+    cat("FAILED \n")
   }
   cat("--------------------------------\n")
 }
-cat(paste("Tests conducted:",length(test_points),"\n"))
-cat(paste("Tests passed:",passed))
+cat(paste("Tests conducted are :",length(test_points),"\n"))
+cat(paste("Tests passed are :",passed))
 close(op)
 jpeg(paste('Error Distribution.jpg',sep=''))
 plotForecastErrors(forecasted$residuals)
